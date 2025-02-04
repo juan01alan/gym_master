@@ -1,10 +1,12 @@
 
 
 nav{
-    min-height: 12vh;
+    min-height: 10vh;
+    position: fixed;
     height: fit-content;
     width: 100%;
     padding: 0 1%;
+    backdrop-filter: blur(100%);
     background: linear-gradient(90deg, rgba(0,198,255,1), rgba(9,51,121,1));
 }
 
@@ -29,6 +31,10 @@ nav ul a{
     border-radius: 5px;
     font-weight: bolder;
     font-size: calc(14px + 0.1vw);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 nav ul a:hover{
@@ -48,7 +54,7 @@ img{
 
 .sec1{
     width: 100%;
-    height: 88vh;
+    height: 100vh;
     background: linear-gradient(90deg, rgba(0,198,255,1), rgba(9,51,121,1));
 }
 .sec1 .center{
@@ -150,6 +156,35 @@ hr{
     background: white;
     color: black;
 }
+
+.imgsc1{
+    animation: hint alternate 1s infinite;
+    animation-timing-function: linear;
+    -webkit-animation: hint alternate 1s infinite;
+}
+@keyframes hint {
+    0%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+    50%{
+        transform: translateY(-8px);
+        -webkit-transform: translateY(-8px);
+        -moz-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+        -o-transform: translateY(-8px);
+}
+    100%{
+        transform: translateY(8px);
+        -webkit-transform: translateY(8px);
+        -moz-transform: translateY(8px);
+        -ms-transform: translateY(8px);
+        -o-transform: translateY(8px);
+}
+}
 .sec2 .imgsc2{
     width: 30%;
     height: 100%;
@@ -158,7 +193,8 @@ hr{
 .sec3{
     background: white;
     width: 100%;
-    height: 100vh;
+    min-height: 40vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,7 +202,8 @@ hr{
 
 .sec3 .center{
     width: 80%;
-    height: 100%;
+    height: 80%;
+    margin: 10%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -199,15 +236,18 @@ hr{
     font-size: 18px;
 }
 .imgsc3{
-    height: 60%;
+    height: 40%;
     display: flex;
     justify-content: flex-end;
-    width: 40%;
+    width: 20%;
 }
 
+
 .sec4{
-    height: 30vh;
+    min-height: 30vh;
+    height: fit-content;
     display: flex;
+    padding: 5% 0;
     align-items: center;
     justify-items: center;
     background: white;
@@ -259,7 +299,10 @@ text-align:center;
 
 #sec5{
     background: white;
-    height: 15vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #sec5 .itensc4{
     background: white;
@@ -280,7 +323,8 @@ text-align:center;
 }
 
 .sec7{
-    height: 100vh;
+    min-height: 50vh;
+    height: fit-content;
     width: 100%;
     background: white;
     display: flex;
@@ -289,6 +333,7 @@ text-align:center;
 }
 
 .sec7 .center{
+    padding: 10%;
     width: 80%;
     height: 80%;
     display: flex;

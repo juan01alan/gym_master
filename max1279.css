@@ -1,12 +1,42 @@
-
-
 nav{
-    min-height: 12vh;
+    position: fixed;
+    border-bottom: 1px solid white;
+    min-height: 8vh;
+    z-index: 99;
     height: fit-content;
     width: 100%;
     padding: 0 1%;
     background: linear-gradient(90deg, rgba(0,198,255,1), rgba(9,51,121,1));
 }
+
+
+.imgsc1{
+    animation: hint alternate 1s infinite;
+    animation-timing-function: linear;
+    -webkit-animation: hint alternate 1s infinite;
+}
+@keyframes hint {
+   0%{
+       transform: translateY(0px);
+       -webkit-transform: translateY(0px);
+       -moz-transform: translateY(0px);
+       -ms-transform: translateY(0px);
+       -o-transform: translateY(0px);
+}
+   50%{
+       transform: translateY(-5px);
+       -webkit-transform: translateY(-5px);
+       -moz-transform: translateY(-5px);
+       -ms-transform: translateY(-5px);
+       -o-transform: translateY(-5px);
+}
+   100%{
+       transform: translateY(5px);
+       -webkit-transform: translateY(5px);
+       -moz-transform: translateY(5px);
+       -ms-transform: translateY(5px);
+       -o-transform: translateY(5px);
+}}
 
 nav .center{
     display: flex;
@@ -50,7 +80,7 @@ img{
 
 .sec1{
     width: 100%;
-    height: 88vh;
+    height: 92vh;
     background: linear-gradient(90deg, rgba(0,198,255,1), rgba(9,51,121,1));
 }
 .sec1 .center{
@@ -160,15 +190,17 @@ hr{
 .sec3{
     background: white;
     width: 100%;
-    height: 100vh;
+    height: fit-content;
+    min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 2%;
 }
 
 .sec3 .center{
     width: 80%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -177,8 +209,8 @@ hr{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 45%;
-    margin-bottom: 5%;
+    height: 40%;
+    margin: 5% 0;
 }
 .textsc3{
     width:60%;
@@ -208,7 +240,9 @@ hr{
 }
 
 .sec4{
-    height: 40vh;
+    height: fit-content;
+    min-height: 20vh;
+    padding: 2% 0;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -284,7 +318,8 @@ text-align:center;
 
 
 .sec7{
-    height: 100vh;
+    height: fit-content;
+    height:60vh;
     width: 100%;
     background: white;
     display: flex;

@@ -1,0 +1,24 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black
+}
+@import url('http://fonts.cdnfonts.com/css/aspire-to-inspire');
+html{
+    scroll-behavior: smooth;
+    font-family:'Aspire to Inspire', sans-serif;
+}
+.center{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .5s ease;
+}
