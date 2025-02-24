@@ -1,24 +1,56 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body{
-    background: black
-}
-@import url('http://fonts.cdnfonts.com/css/aspire-to-inspire');
-html{
-    scroll-behavior: smooth;
-    font-family:'Aspire to Inspire', sans-serif;
-}
-.center{
-    max-width: 1200px;
+.center {
+  position: relative;
+    max-width: 1480px;
     width: 100%;
     margin: 0 auto;
+  }
+.sec1infos>div{
+  cursor: pointer;
 }
-a{
+
+.sec1infos>div:hover{
+  border: 2px solid black;
+}
+  footer a:hover{
+    background: white;
+    color: black;
+  }
+  body{
+    margin: 0;
+  }
+  footer .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
     cursor: pointer;
     text-decoration: none;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
+  section{
+    padding: 0;
+      width: 100%;
+  }
+  .cardsc3{
+    border: 1px solid black;
+  }
+  button:hover{
+    cursor: pointer;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  #sec1,#sec2,sec3{
+    border-bottom: 1px solid black;
+  }
